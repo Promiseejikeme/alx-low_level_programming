@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+CFILE="0.preprocessor"
+gcc -E $CFILE.c -o c
+
+#include <stdio.h>
+
+int main(void)
+{
+	return (0);
+}
