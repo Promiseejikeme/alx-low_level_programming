@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
- * main- Entry point
- * Description: function that prints alphabets
- * Return: always 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
