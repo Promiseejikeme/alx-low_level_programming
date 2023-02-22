@@ -1,11 +1,5 @@
-#include <stdio.h>
-/**
- * main - Entry point
- * Description: declare the function butdoes not call it
- * Return: always 0
- */
-void print_alphabet(void);
 int _putchar(char c);
+void print_alphabet(void);
 void print_alphabet_x10(void);
 int _putchar(char r);
 int _islower(int c);

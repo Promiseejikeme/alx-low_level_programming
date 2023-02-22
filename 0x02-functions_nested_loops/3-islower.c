@@ -1,22 +1,22 @@
+#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
- * test_islower - Test the _islower function
- * @n: Number to pass to _islower function
+ * _islower - shows 1 if the input is a
+ * lowercase character. Another cases, shows
+ * 0
+ * @c: The character is ASCII code
+ * Return: 1 for lowercase character. 0 for the rest.
  */
-int _islower(int n)
+int _islower(int c)
 {
-	int r;
-
-	r = _islower(n);
-	_putchar(r + '0');
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 	_putchar('\n');
-}
-/**
- * main - check the code
- * Return: Always 0.
- */
-int main(void)
-{
-	_islower('H');
-	return (0);
 }
