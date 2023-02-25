@@ -15,6 +15,10 @@ void print_triangle(int size)
 	}
 	for (row = 1; row <= size; row++)
 	{
+		for (column = size - row; column > 0; column--)
+		{
+			_putchar(' ');
+		}	
 		for (column = 1; column <= row; column++)
 		{
 			_putchar('#');
