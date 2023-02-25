@@ -6,35 +6,22 @@
  * @largest - holds the value 1
  * Return: Always 0
  */
-int main()
+int main(void)
 {
-	int num = 612852475143;
-	int factor = 2;
-	int largest = 1;
+	long n = 612852475143;
+	int i = 2, largest_prime_factor = 0;
 	
-	while (num > 1)
+	while (n > 1)
 	{
-		if (num % factor == 0)
-		{
-			largest = factor;
-			num /= factor;
+		if (n % i == 0)
+		{n /= i;
+			largest_prime_factor = i;
 		}
 		else
 		{
-			factor++;
+			i++;
 		}
 	}
-	if (largest == 1)
-	{_putchar('1');
-	}
-	else
-	{
-		while (largest > 0)
-		{
-			_putchar((largest % 10) + '0');
-			largest /= 10;
-		}
-	}
-	_putchar('\n');
+	printf("%d\n", largest_prime_factor);
 	return 0;
 }
