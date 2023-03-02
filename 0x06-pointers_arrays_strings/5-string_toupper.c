@@ -3,6 +3,7 @@
  * string_toupper - changes string from lowercase to uppercase
  * int - accepts any integer value
  * char - accepts any character value
+ * @str: accepts string input
  * @str[i]: represents an array of i entries
  * Return: returns str
  */
