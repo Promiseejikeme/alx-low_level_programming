@@ -3,8 +3,7 @@
 #include <string.h>
 /**
  * leet - encodes a string
- * @i: takes in an integer
- * @j: takes in an integer
+ * @str: represents the input string
  * letters: holds a string
  * leet: holds a string
  * Return: returns leet_str
@@ -13,8 +12,8 @@ char *leet(char *str)
 {
 	int i, j;
 	char *leet_str = str;
-	char *letters = "aeotlAEOTL";
-	char *leets = "43071";
+	char *letters = "aAeEoOtTlL";
+	char *leets = "4433007711";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
