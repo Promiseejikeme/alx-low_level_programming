@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * rot13 - replaces a letter with the 13th letter after it
- * @p: a pointer to str
  * @str: string holder
+ * Return: return str
  */
 char *rot13(char *str)
 {
@@ -11,7 +11,8 @@ char *rot13(char *str)
 
 	while (*p)
 	{
-		for (i = 0; (i < 13 && (*p >= 'a' && *p <= 'z')) || (i < 13 && (*p >= 'A' && *p <= 'Z')); i++)
+		for (i = 0; (i < 13 && (*p >= 'a' && *p <= 'z')) ||
+				(i < 13 && (*p >= 'A' && *p <= 'Z')); i++)
 		{
 			if ((*p >= 'a' && *p == 'm') || (*p >= 'A' && *p <= 'M'))
 				*p += 13;
