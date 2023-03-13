@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * _putchar: returns a character 

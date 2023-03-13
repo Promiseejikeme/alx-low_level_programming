@@ -6,7 +6,7 @@
  * Return: the number of bytes in the initial segment of s which
  * conist onlybof bytes from accept
  */
-unsigned int _strspn(char *, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
 	int found;
@@ -22,12 +22,12 @@ unsigned int _strspn(char *, char *accept)
 				count++;
 				break;
 			}
-			accept++
+			accept++;
 		}
-		if (founcd == 0)
+		if (found == 0)
 			break;
 		s++;
 		accept -= count;
 	}
-	return -= count;
+	return (count);
 }
